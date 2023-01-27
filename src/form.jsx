@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Container, ThemeProvider, createTheme } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Home from './components/home';
-import Registration from './components/registration';
+import LogIn from './components/logIn';
 import SignUp from './components/signUp';
 import style from './style.css';
 import { Box } from "@mui/system";
@@ -26,7 +26,7 @@ function Form() {
                         <div className='info'>
                             <Routes>
                                 <Route path='/home' element={<Home />} />
-                                <Route path='/registration' element={<Registration />} />
+                                <Route path='/logIn' element={<LogIn />} />
                                 <Route path='/signUp' element={<SignUp />} />
                             </Routes>
                         </div>

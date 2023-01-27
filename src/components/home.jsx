@@ -27,7 +27,7 @@ const Home = () => {
                 <Typography variant="h6" gutterBottom  style={{ textAlign: 'center' }}>
                     or
                 </Typography>
-                <Button variant='contained' component={Link} to="/Registration">Registration</Button>
+                <Button variant='contained' component={Link} to="/logIn">Log In</Button>
             </Box>
         </div>
     )
