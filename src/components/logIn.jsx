@@ -27,30 +27,30 @@ const LogIn = () => {
             </div>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div style={{ textAlign: 'center', margin: "30px" }}>
-                <Controller
-                    name="firstName"
-                    control={control}
-                    render={({ field }) => <TextField {...field}
-                        required
-                        label="E-mail"
-                        type="email"
-                        variant="filled" />}
-                />
+                    <Controller
+                        name="firstName"
+                        control={control}
+                        render={({ field }) => <TextField {...field}
+                            required
+                            label="E-mail"
+                            type="email"
+                            variant="filled" />}
+                    />
                 </div>
                 <div style={{ textAlign: 'center', margin: "30px" }}>
-                <Controller
-                    name="passWord"
-                    control={control}
-                    render={({ field }) => <TextField  {...field}
-                        required
-                        label="PassWord"
-                        type='password'
-                        variant="filled"
-                    />}
-                />
+                    <Controller
+                        name="passWord"
+                        control={control}
+                        render={({ field }) => <TextField  {...field}
+                            required
+                            label="PassWord"
+                            type='password'
+                            variant="filled"
+                        />}
+                    />
                 </div>
                 <div style={{ textAlign: 'center', margin: "30px" }}>
-                    <Button variant='contained' color="secondary" component={Link} to="/home">Go Back</Button>
+                    <Button variant='contained' color="secondary" component={Link} to="/">Go Back</Button>
                     <Button variant='contained' type="submit" >&nbsp;&nbsp;Log In&nbsp;&nbsp;</Button>
                 </div>
             </form>

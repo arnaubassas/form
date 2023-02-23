@@ -138,7 +138,7 @@ const SignUp = () => {
                     />
                 </div>
                 <div style={{ textAlign: 'center', margin: "30px" }}>
-                    <Button variant='contained' color="secondary" component={Link} to="/home">Go Back</Button>
+                    <Button variant='contained' color="secondary" component={Link} to="/">Go Back</Button>
 
                     <Button type="submit" variant='contained' >Sign Up</Button>
                 </div>
