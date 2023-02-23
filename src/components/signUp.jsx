@@ -2,12 +2,12 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { TextField } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { useForm, Controller, formState} from "react-hook-form";
+import { useForm, Controller, formState } from "react-hook-form";
 
 
 
 const SignUp = () => {
-    
+
 
     const { control, handleSubmit, formState } = useForm({
         defaultValues: {
@@ -22,9 +22,9 @@ const SignUp = () => {
         }
     });
 
-    console.log(formState.errors)
-    
-    const onSubmit = (data: any) => console.log(data);
+
+
+    const onSubmit = (data) => console.log(data);
 
     return (
         <div>
@@ -43,7 +43,7 @@ const SignUp = () => {
                     <Controller
                         name="firstName"
                         control={control}
-                        render={({ field }) => <TextField {...field} 
+                        render={({ field }) => <TextField {...field}
                             required
                             type="text"
                             label="Name"
@@ -87,7 +87,7 @@ const SignUp = () => {
                     <Controller
                         name="passWord"
                         control={control}
-                        render={({ field }) => <TextField {...field} 
+                        render={({ field }) => <TextField {...field}
                             required
                             label="Password"
                             type="password"
@@ -97,14 +97,15 @@ const SignUp = () => {
                     <Controller
                         name="confirmPassWord"
                         control={control}
-                        rules={{validate: (value, values) => 
-                            values.passWord === values.confirmPassWord || 'Use the same password'
+                        rules={{
+                            validate: (value, values) =>
+                                values.passWord === values.confirmPassWord || 'Use the same password'
                         }}
-                        render={({ field}) => <TextField {...field}
+                        render={({ field }) => <TextField {...field}
                             required
                             type="password"
                             label="Repeat Password"
-                             helperText={formState.errors.confirmPassWord?.message}
+                            helperText={formState.errors.confirmPassWord?.message}
                         />}
                     />
                 </div>
@@ -123,8 +124,9 @@ const SignUp = () => {
                     <Controller
                         name="repeatMail"
                         control={control}
-                        rules={{validate: (value, values) => 
-                            values.mail === values.repeatMail || 'Use the same mail'
+                        rules={{
+                            validate: (value, values) =>
+                                values.mail === values.repeatMail || 'Use the same mail'
                         }}
                         render={({ field }) => <TextField {...field}
                             required

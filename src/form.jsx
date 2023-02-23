@@ -20,14 +20,14 @@ function Form() {
                 </Typography>
             </Box>
             <Box
-            bgcolor={'#fafafa'}>
+                bgcolor={'#fafafa'}>
                 <Container>
                     <div className='page'>
                         <div className='info'>
                             <Routes>
-                                <Route path='/home' element={<Home />} />
-                                <Route path='/logIn' element={<LogIn />} />
-                                <Route path='/signUp' element={<SignUp />} />
+                                <Route exact path='/' element={<Home />} />
+                                <Route exact path='/logIn' element={<LogIn />} />
+                                <Route exact path='/signUp' element={<SignUp />} />
                             </Routes>
                         </div>
                     </div>
