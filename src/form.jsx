@@ -15,7 +15,7 @@ function Form() {
                 borderBottom={1}
                 bgcolor={'#eeeeee'}
             >
-                <Typography variant="h3" gutterBottom style={{ textAlign: 'center' }} >
+                <Typography variant="h3" gutterBottom style={{ textAlign: 'center', marginBottom: "30px", }} >
                     SuperMarket Olio
                 </Typography>
             </Box>
@@ -38,7 +38,7 @@ function Form() {
                 height={100}>
 
             </Box>
-        </div>
+        </div >
     )
 }
 export default Form;
